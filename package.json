@@ -1,6 +1,6 @@
 {
-  "name": "@ravenrebels/ravencoin-sign-transaction",
-  "description": "Signs a Ravencoin transaction",
+  "name": "@telestai-project/telestai-sign-transaction",
+  "description": "Signs a Telestai transaction",
   "version": "0.2.12",
   "source": "index.ts",
   "main": "dist/index.cjs",
@@ -13,17 +13,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ravenrebels/ravencoin-sign-transaction.git"
+    "url": "git+https://github.com/telestai-project/telestai-sign-transaction.git"
   },
   "keywords": [
-    "ravencoin"
+    "telestai",
+    "telestai-sign-transaction",
+    "telestai-sign-transaction-js"
   ],
-  "author": "Raven Rebels - Dick Henrik Larsson",
+  "author": "Telestai Project",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ravenrebels/ravencoin-sign-transaction/issues"
+    "url": "https://github.com/telestai-project/telestai-sign-transaction/issues"
   },
-  "homepage": "https://github.com/ravenrebels/ravencoin-sign-transaction#readme",
+  "homepage": "https://github.com/telestai-project/telestai-sign-transaction#readme",
   "dependencies": {
     "@hyperbitjs/chains": "^0.3.1",
     "bitcoinjs-lib": "^5.2.0"

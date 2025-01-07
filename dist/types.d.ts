@@ -8,7 +8,7 @@ interface IUTXO {
     height?: number;
     value: number;
 }
-export function sign(network: "rvn" | "rvn-test" | "evr" | "evr-test", rawTransactionHex: string, UTXOs: Array<IUTXO>, privateKeys: any): string;
+export function sign(network: "tls" | "tls-test", rawTransactionHex: string, UTXOs: Array<IUTXO>, privateKeys: any): string;
 declare const _default: {
     sign: typeof sign;
 };

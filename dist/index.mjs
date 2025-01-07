@@ -8,20 +8,20 @@ var $c3f6c693698dc7cd$require$Buffer = $hCgyA$Buffer;
 
 function $c3f6c693698dc7cd$export$c5552dfdbc7cec71(network, rawTransactionHex, UTXOs, privateKeys) {
     const networkMapper = {
-        rvn: (0, $hCgyA$chains).rvn.main,
-        "rvn-test": (0, $hCgyA$chains).rvn.test,
+        tls: (0, $hCgyA$chains).tls.main,
+        "tls-test": (0, $hCgyA$chains).tls.test,
         evr: (0, $hCgyA$chains).evr.main,
         "evr-test": (0, $hCgyA$chains).evr.test
     };
     const coin = networkMapper[network];
-    if (!coin) throw new Error("Validation error, first argument network must be rvn, rvn-test, evr or evr-test");
+    if (!coin) throw new Error("Validation error, first argument network must be tls, tls-test, evr or evr-test");
     //@ts-ignore
-    const RAVENCOIN = (0, $hCgyA$toBitcoinJS)(coin);
+    const TELESTAI = (0, $hCgyA$toBitcoinJS)(coin);
     const tx = $hCgyA$Transaction.fromHex(rawTransactionHex);
-    const txb = $hCgyA$TransactionBuilder.fromTransaction(tx, RAVENCOIN);
+    const txb = $hCgyA$TransactionBuilder.fromTransaction(tx, TELESTAI);
     function getKeyPairByAddress(address) {
         const wif = privateKeys[address];
-        const keyPair = $hCgyA$ECPair.fromWIF(wif, RAVENCOIN);
+        const keyPair = $hCgyA$ECPair.fromWIF(wif, TELESTAI);
         return keyPair;
     }
     function getUTXO(transactionId, index) {
