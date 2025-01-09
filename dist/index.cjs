@@ -52,7 +52,6 @@ function $80bd448eb6ea085b$export$c5552dfdbc7cec71(network, rawTransactionHex, U
         tls: telestaiMainNetwork
     };
     const coin = networkMapper[network];
-    console.log("Coin:", coin);
     if (!coin) throw new Error("Validation error, first argument network must be tls, tls-test");
     //@ts-ignore
     const TELESTAI = (0, $g5Y9E$hyperbitjschains.toBitcoinJS)(coin);

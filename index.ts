@@ -49,8 +49,6 @@ export function sign(
 
   const coin = networkMapper[network];
 
-  console.log("Coin:", coin);
-
   if (!coin) {
     throw new Error(
       "Validation error, first argument network must be tls, tls-test"
